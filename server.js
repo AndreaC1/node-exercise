@@ -3,6 +3,8 @@ import config from "./config/index.js";
 // TODO: import router from routes/
 import router from "./routes/index.js";
 
+
+
 const app = express();
 
 app.use(express.json());
@@ -19,3 +21,4 @@ app.use((err, req, res, next) => {
 app.listen(config.port, () => {
   console.log(`Server listening on port ${config.port}...`);
 });
+
